@@ -5,16 +5,16 @@ $clr-cobalt-blue: 234, 85%, 45%;
 
 $clr-light-slate-blue: hsl(252, 100%, 67%);
 $clr-light-royal-blue: hsl(241, 81%, 54%);
-$clr-violet-blue: hsla(256, 72%, 46%, 1);
-$clr-persian-blue: hsla(241, 72%, 46%, 0);
+$clr-violet-blue: hsl(256, 72%, 46%, 1);
+$clr-persian-blue: hsl(241, 72%, 46%, 0);
 
 $clr-white: hsl(0, 0%, 100%);
-$clr-white-transparent: hsla(0, 0%, 100%, .7);
+$clr-white-transparent: hsl(0, 0%, 100%, .7);
 $clr-pale-blue: hsl(221, 100%, 96%);
 $clr-light-lavender: hsl(241, 100%, 89%);
 $clr-dark-gray-blue: hsl(224, 30%, 27%);
-$clr-dark-gray-blue-transparent: hsla(224, 30%, 27%, .2);
-$clr-dark-gray-blue-light-transparent: hsla(224, 30%, 27%, .5);
+$clr-dark-gray-blue-transparent: hsl(224, 30%, 27%, .2);
+$clr-dark-gray-blue-light-transparent: hsl(224, 30%, 27%, .5);
 
 $gradient-primary: linear-gradient(
                 $clr-light-slate-blue,
@@ -179,7 +179,7 @@ body {
                 padding: 1rem;
                 border-radius: .5rem;
 
-                background: hsla(var(--accent-clr), .1);
+                background: hsl(var(--accent-clr), .1);
 
                 &-title {
                     display: flex;
