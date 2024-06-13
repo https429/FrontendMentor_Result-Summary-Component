@@ -1,0 +1,172 @@
+@font-face {
+  font-family: "HankenGrotesk";
+  font-display: swap;
+  font-weight: 100 900;
+  src: url("assets/fonts/HankenGrotesk-VariableFont_wght.ttf") format("truetype");
+}
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  font: inherit;
+}
+
+img,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+body {
+  font-family: "HankenGrotesk", sans-serif;
+  font-size: 1.125rem;
+  color: hsl(224, 30%, 27%);
+  background: hsl(0, 0%, 100%);
+}
+@media (min-width: 600px) {
+  body {
+    min-height: 100dvh;
+    display: grid;
+    place-items: center;
+  }
+}
+
+.section-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.component-wrapper {
+  max-width: 46rem;
+  display: grid;
+  --border-radius: 2rem;
+  --padding: 2.5rem;
+}
+@media (min-width: 600px) {
+  .component-wrapper {
+    margin: 1rem;
+    grid-template-columns: 1fr 1fr;
+    border-radius: var(--border-radius);
+    overflow: hidden;
+    box-shadow: 0.5rem 1rem 3rem hsla(224, 30%, 27%, 0.2);
+  }
+}
+.component-wrapper .result {
+  text-align: center;
+  background: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+  color: hsla(0, 0%, 100%, 0.7);
+  border-bottom-left-radius: var(--border-radius);
+  border-bottom-right-radius: var(--border-radius);
+  padding: var(--padding);
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-between;
+  row-gap: 2rem;
+}
+@media (min-width: 600px) {
+  .component-wrapper .result {
+    border-radius: var(--border-radius);
+  }
+}
+.component-wrapper .result-score {
+  background: linear-gradient(hsl(256, 72%, 46%), hsla(241, 72%, 46%, 0));
+  width: 12rem;
+  aspect-ratio: 1/1;
+  margin-inline: auto;
+  border-radius: 100vw;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+}
+.component-wrapper .result-score span {
+  font-size: 5rem;
+  font-weight: 900;
+  line-height: 1;
+  color: hsl(0, 0%, 100%);
+}
+.component-wrapper .result-rank {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-between;
+  row-gap: 1rem;
+}
+.component-wrapper .result-rank strong {
+  display: block;
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: hsl(0, 0%, 100%);
+}
+.component-wrapper .result-rank p {
+  padding-inline: 1rem;
+}
+.component-wrapper .summary {
+  padding: var(--padding);
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-between;
+  row-gap: 2rem;
+}
+.component-wrapper .summary-list {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-between;
+  row-gap: 1rem;
+}
+.component-wrapper .summary-list-item {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  background: hsla(var(--accent-clr), 0.1);
+}
+.component-wrapper .summary-list-item-title {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: start;
+  align-items: center;
+  gap: 1rem;
+  color: hsl(var(--accent-clr));
+  font-weight: 700;
+}
+.component-wrapper .summary-list-item-title svg {
+  stroke: hsl(var(--accent-clr));
+}
+.component-wrapper .summary-list-item-score {
+  color: hsla(224, 30%, 27%, 0.5);
+}
+.component-wrapper .summary-list-item-score span {
+  font-weight: 700;
+  color: hsl(224, 30%, 27%);
+}
+.component-wrapper .summary-list-item[data-accent="1"] {
+  --accent-clr: 0, 100%, 67%;
+}
+.component-wrapper .summary-list-item[data-accent="2"] {
+  --accent-clr: 39, 100%, 56%;
+}
+.component-wrapper .summary-list-item[data-accent="3"] {
+  --accent-clr: 166, 100%, 37%;
+}
+.component-wrapper .summary-list-item[data-accent="4"] {
+  --accent-clr: 234, 85%, 45%;
+}
+.component-wrapper .summary-button {
+  color: hsl(0, 0%, 100%);
+  background: hsl(224, 30%, 27%);
+  padding: 1rem 2rem;
+  line-height: 1;
+  border: 0;
+  border-radius: 100vw;
+  cursor: pointer;
+}
+.component-wrapper .summary-button:hover, .component-wrapper .summary-button:focus-visible {
+  background: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+}
+
+/*# sourceMappingURL=style.css.map */
